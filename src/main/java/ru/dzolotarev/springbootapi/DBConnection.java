@@ -7,5 +7,5 @@ public class DBConnection {
     private String login;
 
     @Value("${password}")
-    private Integer password;
+    private String password;
 }
