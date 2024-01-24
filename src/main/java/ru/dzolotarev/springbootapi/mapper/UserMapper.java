@@ -12,4 +12,6 @@ import java.util.List;
         unmappedSourcePolicy = ReportingPolicy.IGNORE)
 public interface UserMapper {
     List<UserDTO> toUserDTOs(List<UserEntity> userEntities);
+
+    UserEntity toUserEntity(UserDTO userDTO);
 }

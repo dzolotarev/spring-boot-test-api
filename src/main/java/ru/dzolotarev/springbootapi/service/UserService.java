@@ -14,7 +14,15 @@ public class UserService {
     private final UserRepository userRepository;
     private final UserMapper userMapper;
 
-    public List<UserDTO> getAll() {
+    public List<UserDTO> getAllUsers() {
         return userMapper.toUserDTOs(userRepository.findAll());
+    }
+
+    public List<UserDTO> getUsersByAge(Integer age) {
+        return userMapper.toUserDTOs(userRepository.findUserEntityByAge(age));
+    }
+
+    public void saveUser(UserDTO userDTO) {
+        userRepository.save(userMapper.toUserEntity(userDTO));
     }
 }
