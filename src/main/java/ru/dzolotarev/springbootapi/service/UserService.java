@@ -11,6 +11,7 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class UserService {
+
     private final UserRepository userRepository;
     private final UserMapper userMapper;
 
@@ -24,5 +25,9 @@ public class UserService {
 
     public void saveUser(UserDTO userDTO) {
         userRepository.save(userMapper.toUserEntity(userDTO));
+    }
+
+    public void delete(Long id) {
+        userRepository.deleteById(id);
     }
 }
