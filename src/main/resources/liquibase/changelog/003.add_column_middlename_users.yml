@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: tbl.users.003
+      author: Denis Zolotarev
+      changes:
+        - addColumn:
+            schemaName: spring
+            tableName: users
+            columns:
+              - column:
+                  name: middlename
+                  type: varchar(128)

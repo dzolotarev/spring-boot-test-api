@@ -1,4 +1,7 @@
 spring:
+  liquibase:
+    change-log: classpath:/liquibase/db.changelog-master.yml
+    enabled: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/spring
@@ -7,7 +10,7 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     open-in-view: false
 server:
   port: 8080

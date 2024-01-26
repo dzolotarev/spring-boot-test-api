@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: tbl.users.001
+      author: Denis Zolotarev
+      createTable:
+        schemaName: spring
+        tableName: users
+        columns:
+          - column:
+              name: id
+              type: BIGINT
+              autoIncrement: true
+              constraints:
+                primaryKey: true
+          - column:
+              name: name
+              type: varchar(128)
+          - column:
+              name: age
+              type: int

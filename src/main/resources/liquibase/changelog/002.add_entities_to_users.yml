@@ -1,0 +1,86 @@
+databaseChangeLog:
+  - changeSet:
+      id: tbl.users.002
+      author: Denis Zolotarev
+      changes:
+        - insert:
+            schemaName: spring
+            tableName: users
+            columns:
+              - column:
+                  name: name
+                  value: "Маша"
+              - column:
+                  name: age
+                  value: "22"
+#  DOES NOT WORK - NEED SOME RESEARCH HOW TO DO MULTIPLE INSERT
+#        - insert:
+#            schemaName: spring
+#            tableName: users
+#            columns:
+#              - column:
+#                  name: name
+#                  value: "Петя"
+#              - column:
+#                  name: age
+#                  value: "23"
+#      -insert:
+#          schemaName: spring
+#          tableName: users
+#          columns:
+#            - column:
+#                name: name
+#                value: "Никодай Иванович"
+#            - column:
+#                name: age
+#                value: "38"
+#      - insert:
+#          schemaName: spring
+#          tableName: users
+#          columns:
+#            - column:
+#                name: name
+#                value: "Артемий Семенович"
+#            - column:
+#                name: age
+#                value: "39"
+#      - insert:
+#          schemaName: spring
+#          tableName: users
+#          columns:
+#            - column:
+#                name: name
+#                value: "Ванек"
+#            - column:
+#                name: age
+#                value: "18"
+#      - insert:
+#          schemaName: spring
+#          tableName: users
+#          columns:
+#            - column:
+#                name: name
+#                value: "Терминатор"
+#            - column:
+#                name: age
+#                value: "150"
+#      - insert:
+#          schemaName: spring
+#          tableName: users
+#          columns:
+#            - column:
+#                name: name
+#                value: "John Smith"
+#            - column:
+#                name: age
+#                value: "35"
+#      - insert:
+#          schemaName: spring
+#          tableName: users
+#          columns:
+#            - column:
+#                name: name
+#                value: "Вася Иванов"
+#            - column:
+#                name: age
+#                value: "32"
