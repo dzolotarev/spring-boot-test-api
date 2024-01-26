@@ -20,7 +20,7 @@ public class UserAspect {
     }
 
     //all overloaded saveUser() methods in service
-    @Pointcut("execution(public * ru.dzolotarev.springbootapi.service.UserService.saveUser(..))")
+    @Pointcut("execution(public * ru.dzolotarev.springbootapi.service.UserService.save(..))")
 
     public void callAllPublicSaveMethodsInService() {
     }
