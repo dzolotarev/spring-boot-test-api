@@ -14,3 +14,5 @@ spring:
     open-in-view: false
 server:
   port: 8080
+api:
+  product: http://localhost:8081
