@@ -37,7 +37,7 @@ public class UserController {
 
     @PutMapping(params = "id") // http://localhost:8080/users?id=123 PUT and BODY {"name":"John Smith","age":"35"}
     public UserDTO updateById(@RequestParam("id") Long id,
-                              @RequestBody UserDTO userDTO) {
+                              @RequestBody @Valid UserDTO userDTO) {
         return userService.updateById(id, userDTO);
     }
 
